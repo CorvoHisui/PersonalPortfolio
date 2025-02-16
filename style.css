@@ -2,21 +2,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
-  --base-color: white;
-  --base-oposite: black;
-  --text-color: rgb(85, 85, 85);
-  --link-hover-color: rgb(181, 181, 181);
-  --border-color: rgb(163, 163, 163);
+  --page-background-color: white;
+  --section-pic-background: grey;
+
   --background-color: rgb(250, 250, 250);
+  --text-color: rgb(85, 85, 85);
+  --title-color: rgb(50, 50, 50);
+  --subtitile-color: rgb(60, 60, 60);
+
+  --link-color: rgb(85, 85, 85);
+  --link-hover-color: rgb(181, 181, 181);
+  --icon-color: black;
+  --border-color: rgb(163, 163, 163);
+
+  --button1-background-color: black;
+  --button2-background-color: white;
+  --button1-text-color: white;
+  --button2-text-color: black;
 }
 
 .darkmode {
-  --base-color: #414868;
-  --base-oposite: #c0caf5;
-  --text-color: #cfc9c2;
-  --link-hover-color: #b4f9f8;
-  --border-color: #a9b1d6;
-  --background-color: #1a1b26;
+  --page-background-color: white;
+  --section-pic-background: grey;
+
+  --background-color: rgb(250, 250, 250);
+  --text-color: rgb(85, 85, 85);
+  --title-color: rgb(150, 150, 150);
+  --subtitile-color: rgb(120, 120, 120);
+
+  --link-color: rgb(85, 85, 85);
+  --link-hover-color: rgb(181, 181, 181);
+  --icon-color: black;
+  --border-color: rgb(163, 163, 163);
+
+  --button1-background-color: black;
+  --button2-background-color: white;
+  --button1-text-color: white;
+  --button2-text-color: black;
 }
 
 * {
@@ -28,7 +50,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: var(--background-color);
+  background-color: var(--page-background-color);
 }
 
 html {
@@ -97,13 +119,13 @@ nav {
 }
 
 a {
-  color: black;
+  color: var(--link-color);
   text-decoration: none;
-  text-decoration-color: white;
+  text-decoration-color: var(--link-color);
 }
 
 a:hover {
-  color: var(--text-color);
+  color: var(--link-hover-color);
   text-decoration: underline;
   text-underline-offset: 0.5rem;
   text-decoration-color: var(--link-hover-color);
@@ -111,6 +133,7 @@ a:hover {
 
 .logo {
   font-size: 2rem;
+  color: var(--title-color);
 }
 
 .logo:hover {
@@ -140,7 +163,7 @@ a:hover {
 .hamburger-icon span {
   width: 100%;
   height: 2px;
-  background-color: var(--base-oposite);
+  background-color: var(--icon-color);
   transition: all 0.3 ease-in-out;
 }
 
@@ -148,7 +171,7 @@ a:hover {
   position: absolute;
   top: 100%;
   right: 0%;
-  background-color: var(--base-color);
+  background-color: var(--background-color);
   width: fit-content;
   max-height: 0;
   overflow: hidden;
@@ -160,7 +183,7 @@ a:hover {
   padding: 10px;
   text-align: center;
   font-size: 1.5rem;
-  color: var(--base-oposite);
+  color: var(--link-color);
   text-decoration: none;
   transition: all 0.3 ease-in-out;
 }
@@ -231,7 +254,10 @@ section {
   height: 400px;
   width: 400px;
   margin: 2rem 0;
-  background-color: var(--background-color);
+}
+
+.section__pic-container img {
+  background-color: var(--section-pic-background);
   border-radius: 50%;
 }
 
@@ -258,6 +284,7 @@ section {
 .title {
   font-size: 3rem;
   text-align: center;
+  color: var(--title-color);
 }
 
 #social-container {
@@ -272,6 +299,17 @@ section {
 .icon {
   cursor: pointer;
   height: 2rem;
+}
+
+.icon svg {
+  fill: var(--icon-color);
+  width: 50px;
+  height: 50px;
+}
+
+.contact-icon svg {
+  display: block;
+  margin: auto;
 }
 
 /* BUTTONS */
@@ -292,7 +330,7 @@ section {
 
 .btn-color-1,
 .btn-color-2 {
-  border: rgb(53, 53, 53) 0.1rem solid;
+  border: var(--border-color) 0.1rem solid;
 }
 
 .btn-color-1:hover,
@@ -311,15 +349,15 @@ section {
 
 .btn-color-1:hover,
 .btn-color-2 {
-  background: var(--base-color);
-  color: var(--base-oposite);
+  background: var(--button1-background-color);
+  color: var(--button1-text-color);
 }
 
 .btn-color-1,
 .btn-color-2:hover {
-  background: var(--base-oposite);
-  color: var(--base-color);
-  border: var(--background-color) 0.1rem solid;
+  background: var(--button2-background-color);
+  color: var(--button2-text-color);
+  border: var(--border-color) 0.1rem solid;
 }
 
 .btn-container {
@@ -349,7 +387,8 @@ section {
 }
 
 .about-pic {
-  border-radius: 2rem;
+  border-radius: 3cap;
+  border: 50%;
 }
 
 .arrow {
@@ -361,10 +400,10 @@ section {
 .details-container {
   padding: 1.5rem;
   flex: 1;
-  background: var(--base-color);
+  background: var(--background-color);
   border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
+  border: var(--border-color) 0.1rem solid;
+  border-color: var(--border-color);
   text-align: center;
 }
 
@@ -386,7 +425,7 @@ section {
 }
 
 .experience-sub-title {
-  color: rgb(85, 85, 85);
+  color: var(--title-color);
   font-weight: 600;
   font-size: 1.75rem;
   margin-bottom: 2rem;
@@ -413,6 +452,7 @@ article {
   width: 10rem;
   justify-content: space-around;
   gap: 0.5rem;
+  color: var(--subtitile-color);
 }
 
 article .icon {
@@ -442,8 +482,14 @@ article .icon {
 }
 
 .project-btn {
-  color: black;
+  color: var(--button2-text-color);
+  background-color: var(--button2-background-color);
   border-color: var(--border-color);
+}
+
+.project-btn:hover {
+  color: var(--button1-text-color);
+  background-color: var(--button1-background-color);
 }
 
 /* CONTACT SECTION */
@@ -459,7 +505,7 @@ article .icon {
   display: flex;
   justify-content: center;
   border-radius: 2rem;
-  border: var(--text-color) 0.1rem solid;
+  border: var(--border-color) 0.1rem solid;
   border-color: var(--border-color);
   background: var(--background-color);
   margin: 2rem auto;

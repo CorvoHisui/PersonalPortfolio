@@ -22,6 +22,7 @@
       </ul>
     </div>
 
+
   </nav>
 
   <nav id="hamburger-nav">
@@ -39,8 +40,8 @@
         <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
       </div>
     </div>
-  </nav>
 
+  </nav>
   <button id="theme-switch" class="button">
     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
       <path
@@ -53,9 +54,10 @@
   </button>
 
 
+
   <section id="profile">
     <div class="section__pic-container">
-      <img src="./assets/profile-pic.png" alt="Jhon Doe Profile picture">
+      <img src="./assets/cv-profile-pic.png" alt="Ricardo Frias Profile picture">
     </div>
     <div class="section__text">
       <p class="section__text__p1">Hello, I'm</p>
@@ -63,8 +65,8 @@
       <p class="section__text__p2">Gameplay developer</p>
 
       <div class="btn-container">
-        <button class="btn btn-color-1" onclick="window.open('./assets/(ENG)CV_Ricardo-Frias_Videogame.pdf')">
-          Download Cv
+        <button class="btn btn-color-1" onclick="window.open('./assets/(ENG)CV_Ricardo-Frias.pdf')">
+          View Cv
         </button>
 
         <button class="btn btn-color-2" onclick="location.href='#contact'">
@@ -72,10 +74,27 @@
         </button>
       </div>
       <div id="social-container">
-        <img src="assets/linkedin.png" alt="My linkedin profile" class="icon"
-          onclick="location.href='https://www.linkedin.com/in/rifrfe/'">
-        <img src="assets/github.png" alt="My github profile" class="icon"
-          onclick="location.href='https://github.com/CorvoHisui'">
+        <div class="icon" onclick="location.href='https://www.linkedin.com/in/rifrfe/'">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path
+              d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+          </svg>
+        </div>
+        <div class="icon" onclick="location.href='https://github.com/CorvoHisui'">
+          <svg xmlns=" http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path
+              d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-4.466 19.59c-.405.078-.534-.171-.534-.384v-2.195c0-.747-.262-1.233-.55-1.481 1.782-.198 3.654-.875 3.654-3.947 0-.874-.312-1.588-.823-2.147.082-.202.356-1.016-.079-2.117 0 0-.671-.215-2.198.82-.64-.18-1.324-.267-2.004-.271-.68.003-1.364.091-2.003.269-1.528-1.035-2.2-.82-2.2-.82-.434 1.102-.16 1.915-.077 2.118-.512.56-.824 1.273-.824 2.147 0 3.064 1.867 3.751 3.645 3.954-.229.2-.436.552-.508 1.07-.457.204-1.614.557-2.328-.666 0 0-.423-.768-1.227-.825 0 0-.78-.01-.055.487 0 0 .525.246.889 1.17 0 0 .463 1.428 2.688.944v1.489c0 .211-.129.459-.528.385-3.18-1.057-5.472-4.056-5.472-7.59 0-4.419 3.582-8 8-8s8 3.581 8 8c0 3.533-2.289 6.531-5.466 7.59z" />
+          </svg>
+
+        </div>
+        <div class="icon" onclick="location.href='https://corrrvo.itch.io/'">
+          <svg fill="#000000" width="800px" height="800px" viewBox="0 0 24 24" role="img"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M3.13 1.338C2.08 1.96.02 4.328 0 4.95v1.03c0 1.303 1.22 2.45 2.325 2.45 1.33 0 2.436-1.102 2.436-2.41 0 1.308 1.07 2.41 2.4 2.41 1.328 0 2.362-1.102 2.362-2.41 0 1.308 1.137 2.41 2.466 2.41h.024c1.33 0 2.466-1.102 2.466-2.41 0 1.308 1.034 2.41 2.363 2.41 1.33 0 2.4-1.102 2.4-2.41 0 1.308 1.106 2.41 2.435 2.41C22.78 8.43 24 7.282 24 5.98V4.95c-.02-.62-2.082-2.99-3.13-3.612-3.253-.114-5.508-.134-8.87-.133-3.362 0-7.945.053-8.87.133zm6.376 6.477a2.74 2.74 0 0 1-.468.602c-.5.49-1.19.795-1.947.795a2.786 2.786 0 0 1-1.95-.795 2.618 2.618 0 0 1-.446-.59 2.749 2.749 0 0 1-.486.59 2.788 2.788 0 0 1-1.95.795.826.826 0 0 1-.264-.052 40.362 40.362 0 0 0-.168 2.95v.005l-.006 1.167c.02 2.334-.23 7.564 1.03 8.85 1.952.454 5.545.662 9.15.663 3.605 0 7.198-.21 9.15-.664 1.26-1.284 1.01-6.514 1.03-8.848l-.006-1.167v-.004a39.749 39.749 0 0 0-.168-2.95.854.854 0 0 1-.263.052 2.788 2.788 0 0 1-1.95-.795 2.691 2.691 0 0 1-.486-.59c-.127.22-.265.412-.447.59a2.786 2.786 0 0 1-1.95.794c-.76 0-1.446-.303-1.948-.793a2.74 2.74 0 0 1-.468-.602 2.738 2.738 0 0 1-.463.602 2.787 2.787 0 0 1-1.95.794h-.16a2.787 2.787 0 0 1-1.95-.793 2.738 2.738 0 0 1-.464-.602zm-2.004 2.59v.002c.795.002 1.5 0 2.373.953A20.263 20.263 0 0 1 12 11.253c.72 0 1.438.035 2.125.107.873-.953 1.578-.95 2.372-.953.376 0 1.876 0 2.92 2.934l1.123 4.028c.832 2.995-.266 3.068-1.636 3.07-2.03-.075-3.156-1.55-3.156-3.025-1.124.184-2.436.276-3.748.277-1.312 0-2.624-.093-3.748-.277 0 1.475-1.125 2.95-3.156 3.026-1.37-.004-2.468-.077-1.636-3.072l1.122-4.027c1.045-2.934 2.545-2.934 2.92-2.934zM12 12.714c-.002.002-2.14 1.964-2.523 2.662l1.4-.056v1.22c0 .056.56.033 1.123.007.562.026 1.124.05 1.124-.008v-1.22l1.4.055C14.138 14.677 12 12.713 12 12.713z" />
+          </svg>
+          </svg>
+        </div>
       </div>
     </div>
   </section>
@@ -89,12 +108,24 @@
       <div class="about-details-container">
         <div class="about-container">
           <div class="details-container">
-            <img src="assets/experience.png" alt="experience icon" class="icon">
+            <div class="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                fill="#e8eaed">
+                <path
+                  d="m387-412 35-114-92-74h114l36-112 36 112h114l-93 74 35 114-92-71-93 71ZM240-40v-309q-38-42-59-96t-21-115q0-134 93-227t227-93q134 0 227 93t93 227q0 61-21 115t-59 96v309l-240-80-240 80Zm240-280q100 0 170-70t70-170q0-100-70-170t-170-70q-100 0-170 70t-70 170q0 100 70 170t170 70Z" />
+              </svg>
+            </div>
             <h3>Experience</h3>
             <p>Gameplay Developer <br> QA tester <br> unreal solo developer</p>
           </div>
           <div class="details-container">
-            <img src="assets/education.png" alt="education icon" class="icon">
+            <div class="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                fill="#e8eaed">
+                <path
+                  d="M0-240v-63q0-43 44-70t116-27q13 0 25 .5t23 2.5q-14 21-21 44t-7 48v65H0Zm240 0v-65q0-32 17.5-58.5T307-410q32-20 76.5-30t96.5-10q53 0 97.5 10t76.5 30q32 20 49 46.5t17 58.5v65H240Zm540 0v-65q0-26-6.5-49T754-397q11-2 22.5-2.5t23.5-.5q72 0 116 26.5t44 70.5v63H780ZM160-440q-33 0-56.5-23.5T80-520q0-34 23.5-57t56.5-23q34 0 57 23t23 57q0 33-23 56.5T160-440Zm640 0q-33 0-56.5-23.5T720-520q0-34 23.5-57t56.5-23q34 0 57 23t23 57q0 33-23 56.5T800-440Zm-320-40q-50 0-85-35t-35-85q0-51 35-85.5t85-34.5q51 0 85.5 34.5T600-600q0 50-34.5 85T480-480Z" />
+              </svg>
+            </div>
             <h3>Education</h3>
             <p>AI Engineering Bootcamp <br> Master Videogame Programming <br> Degree Videogame design &
               development</p>
@@ -111,7 +142,12 @@
         </div>
       </div>
     </div>
-    <img src="assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#experience'">
+    <div class="arrow icon" onclick="location.href='#experience'">
+      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+        <path
+          d="M480-200 240-440l56-56 184 183 184-183 56 56-240 240Zm0-240L240-680l56-56 184 183 184-183 56 56-240 240Z" />
+      </svg>
+    </div>
   </section>
   <section id="experience">
     <p class="section__text__p1">Explore My</p>
@@ -122,28 +158,52 @@
           <h2 class="experience-sub-title">Videogame Programmer</h2>
           <div class="article-container">
             <article>
-              <img src="assets/checkmark.png" alt="checkmark icon" class="icon">
+              <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                  fill="#e8eaed">
+                  <path
+                    d="m344-60-76-128-144-32 14-148-98-112 98-112-14-148 144-32 76-128 136 58 136-58 76 128 144 32-14 148 98 112-98 112 14 148-144 32-76 128-136-58-136 58Zm94-278 226-226-56-58-170 170-86-84-56 56 142 142Z" />
+                </svg>
+              </div>
               <div>
                 <h3>C#</h3>
                 <p>Experienced</p>
               </div>
             </article>
             <article>
-              <img src="assets/checkmark.png" alt="checkmark icon" class="icon">
+              <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                  fill="#e8eaed">
+                  <path
+                    d="m344-60-76-128-144-32 14-148-98-112 98-112-14-148 144-32 76-128 136 58 136-58 76 128 144 32-14 148 98 112-98 112 14 148-144 32-76 128-136-58-136 58Zm94-278 226-226-56-58-170 170-86-84-56 56 142 142Z" />
+                </svg>
+              </div>
               <div>
                 <h3>Unity3D</h3>
                 <p>Experienced</p>
               </div>
             </article>
             <article>
-              <img src="assets/checkmark.png" alt="checkmark icon" class="icon">
+              <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                  fill="#e8eaed">
+                  <path
+                    d="m344-60-76-128-144-32 14-148-98-112 98-112-14-148 144-32 76-128 136 58 136-58 76 128 144 32-14 148 98 112-98 112 14 148-144 32-76 128-136-58-136 58Zm94-278 226-226-56-58-170 170-86-84-56 56 142 142Z" />
+                </svg>
+              </div>
               <div>
                 <h3>C++</h3>
                 <p>Intermidiate</p>
               </div>
             </article>
             <article>
-              <img src="assets/checkmark.png" alt="checkmark icon" class="icon">
+              <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                  fill="#e8eaed">
+                  <path
+                    d="m344-60-76-128-144-32 14-148-98-112 98-112-14-148 144-32 76-128 136 58 136-58 76 128 144 32-14 148 98 112-98 112 14 148-144 32-76 128-136-58-136 58Zm94-278 226-226-56-58-170 170-86-84-56 56 142 142Z" />
+                </svg>
+              </div>
               <div>
                 <h3>Unreal Engine</h3>
                 <p>Intermidiate</p>
@@ -156,21 +216,39 @@
           <h2 class="experience-sub-title">General Coding</h2>
           <div class="article-container">
             <article>
-              <img src="assets/checkmark.png" alt="checkmark icon" class="icon">
+              <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                  fill="#e8eaed">
+                  <path
+                    d="m344-60-76-128-144-32 14-148-98-112 98-112-14-148 144-32 76-128 136 58 136-58 76 128 144 32-14 148 98 112-98 112 14 148-144 32-76 128-136-58-136 58Zm94-278 226-226-56-58-170 170-86-84-56 56 142 142Z" />
+                </svg>
+              </div>
               <div>
                 <h3>SQL</h3>
                 <p>Intermidiate</p>
               </div>
             </article>
             <article>
-              <img src="assets/checkmark.png" alt="checkmark icon" class="icon">
+              <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                  fill="#e8eaed">
+                  <path
+                    d="m344-60-76-128-144-32 14-148-98-112 98-112-14-148 144-32 76-128 136 58 136-58 76 128 144 32-14 148 98 112-98 112 14 148-144 32-76 128-136-58-136 58Zm94-278 226-226-56-58-170 170-86-84-56 56 142 142Z" />
+                </svg>
+              </div>
               <div>
                 <h3>HTML</h3>
                 <p>Begginer</p>
               </div>
             </article>
             <article>
-              <img src="assets/checkmark.png" alt="checkmark icon" class="icon">
+              <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                  fill="#e8eaed">
+                  <path
+                    d="m344-60-76-128-144-32 14-148-98-112 98-112-14-148 144-32 76-128 136 58 136-58 76 128 144 32-14 148 98 112-98 112 14 148-144 32-76 128-136-58-136 58Zm94-278 226-226-56-58-170 170-86-84-56 56 142 142Z" />
+                </svg>
+              </div>
               <div>
                 <h3>CSS</h3>
                 <p>Begginer</p>
@@ -180,7 +258,13 @@
         </div>
       </div>
     </div>
-    <img src="assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#projects'">
+    <div class="arrow icon" onclick="location.href='#projects'">
+      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+        <path
+          d="M480-200 240-440l56-56 184 183 184-183 56 56-240 240Zm0-240L240-680l56-56 184 183 184-183 56 56-240 240Z" />
+      </svg>
+    </div>
+
   </section>
   <section id="projects">
     <p class="section__text__p1">Browse my recent</p>
@@ -206,7 +290,7 @@
           <div class="article-container">
             <img src="assets/puppet-master.png" alt="Project 2" class="project-img">
           </div>
-          <h2 class="experience-sub-title project-title">Puppet master</h2>
+          <h2 class="experience-sub-title project-title">Puppet <br> master</h2>
           <div class="btn-container">
             <button class="btn btn-color-2 project-btn"
               onclick="location.href='https://aonekorigin.itch.io/puppet-madness'">
@@ -226,19 +310,34 @@
           </div>
         </div>
       </div>
-      <img src="assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#contact'">
+      <div class="arrow icon" onclick="location.href='#contact'">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+          <path
+            d="M480-200 240-440l56-56 184 183 184-183 56 56-240 240Zm0-240L240-680l56-56 184 183 184-183 56 56-240 240Z" />
+        </svg>
+      </div>
   </section>
   <section id="contact">
     <p class="section__text__p1">Get in touch</p>
     <h1 class="title">Contact me</h1>
     <div class="contact-info-upper-container">
       <div class="contact-info-container">
-        <img src="assets/email.png" alt="email icon" class="icon contact-icon">
+        <div class="icon contact-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+            <path
+              d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280 320-200v-80L480-520 160-720v80l320 200Z" />
+          </svg>
+        </div>
         <p><a href="mailto:r.friasfernandez@outlook.com">r.friasfernandez@outlook.com</a></p>
 
       </div>
       <div class="contact-info-container">
-        <img src="assets/linkedin.png" alt="linkedin icon" class="icon contact-icon">
+        <div class="icon" onclick="location.href='https://www.linkedin.com/in/rifrfe/'">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path
+              d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+          </svg>
+        </div>
         <p><a href="https://www.linkedin.com/in/rifrfe/">LinkedIn</a></p>
       </div>
     </div>
