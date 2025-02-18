@@ -1,8 +1,9 @@
 /* GENERAL */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
-  --page-background-color: white;
+  --page-background-color: #fcfbf7;
   --section-pic-background: grey;
 
   --background-color: rgb(250, 250, 250);
@@ -12,13 +13,15 @@
 
   --link-color: rgb(85, 85, 85);
   --link-hover-color: rgb(181, 181, 181);
-  --icon-color: black;
+  --icon-color: #343231;
   --border-color: rgb(163, 163, 163);
 
-  --button1-background-color: black;
-  --button2-background-color: white;
-  --button1-text-color: white;
-  --button2-text-color: black;
+  --button1-background-color: #343231;
+  --button2-background-color: #fcfbf7;
+  --button1-text-color: #fcfbf7;
+  --button2-text-color: #343231;
+
+  --typewritter-speed: 3s;
 }
 
 .darkmode {
@@ -26,13 +29,13 @@
   --section-pic-background: #24283b;
 
   --background-color: #414868;
-  --text-color: #565f89;
+  --text-color: #c0caf5;
   --title-color: #2ac3de;
   --subtitile-color: #7aa2f7;
 
   --link-color: #f7768e;
   --link-hover-color: #e0af68;
-  --icon-color: #a9b1d6;
+  --icon-color: #c0caf5;
   --border-color: #cfc9c2;
 
   --button1-background-color: #24283b;
@@ -93,7 +96,48 @@ p {
 }
 
 /* TRANSITIONS */
+/*
+h1 {
+  font-family: "Chivo Mono";
+  position: relative;
+  width: max-content;
+}
 
+h1::before,
+h1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+h1::before {
+  background-color: var(--page-background-color);
+  animation: typewriter var(--typewritter-speed) steps(13) 1s forwards
+}
+
+h1::after {
+  width: 0.125em;
+  background-color: black;
+  animation: typewriter var(--typewritter-speed) steps(13) 1s forwards,
+    blink 750ms steps(13) infinite;
+  ;
+}
+
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes blink {
+  to {
+    background-color: transparent;
+  }
+}
+*/
 a,
 .btn {
   transition: all 300ms ease;
